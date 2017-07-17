@@ -3,8 +3,10 @@
 We hope you find exactly what you need for your car.
 
 {{#each model as |product|}}
-  {{product-tile product=product}}
+  {{product-tile product=product destroyProduct="destroyproduct"}}
 {{/each}}
+
+{{new-product saveProduct2="saveProduct3"}}
 
 <hr>
 
