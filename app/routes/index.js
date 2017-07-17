@@ -1,6 +1,6 @@
 import Ember from 'ember';
 var products = [{
-  title: "Toyota prius right-back headlight",
+  title: "Toyota prius right-back tail light",
   make: "2013",
   model: "XW30",
   image: "https://i.ebayimg.com/thumbs/images/g/ZrYAAOSwc-tY8ZwG/s-l225.jpg",
@@ -20,6 +20,6 @@ var products = [{
 }];
 export default Ember.Route.extend({
   model() {
-    return products;
+    return this.store.findAll('products');
   },
-})
+});
