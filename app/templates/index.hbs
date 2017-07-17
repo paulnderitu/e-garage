@@ -2,21 +2,9 @@
 
 We hope you find exactly what you need for your car.
 
-<h2>Available Products</h2>
-
-
-  {{#each model as |product|}}
-  <hr>
-     {{product.title}}'s
-     <br>
-      <img src="{{product.image}}">
-
-       <br>
-     manufactured in
-       <br>{{product.make}}
-       <br>{{product.model}} model
-       <br>For only Ksh {{product.price}}.
-  {{/each}}
+{{#each model as |product|}}
+  {{product-tile product=product}}
+{{/each}}
 
 <hr>
 
