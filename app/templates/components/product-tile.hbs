@@ -7,4 +7,5 @@ manufactured in
 <br>{{product.model}} model
 <br>For only Ksh {{product.price}}
 
-<button {{action 'delete' product}}>Delete Item</button>
+{{update-product product=product update="update"}}
+<button {{action 'delete' product}}>Delete</button>
